@@ -7,8 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+MainUI.h"
+#import "FindViewController.h"
+#import "LoginVC.h"
+#import "LBinKidsApp.h"
 
 @interface AppDelegate ()
+{
+    
+    LBinKidsApp* lBinKidsApp;
+}
 
 @end
 
@@ -16,9 +24,27 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.mainVC = [self fetchTabbarController];
+    self.window.rootViewController = self.mainVC;
+
+    LoginVC *log = [[LoginVC alloc]initWithNibName:@"LoginVC" bundle:[NSBundle mainBundle]];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:log];
+
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    //修改ios7下statusbar风格
+    if (IOS7) {
+        [[UIApplication  sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    }
+    //加载LBinKidsAp
+    lBinKidsApp  = [LBinKidsApp share];
+    [lBinKidsApp setApplication:application];
+    [self.window makeKeyAndVisible];
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

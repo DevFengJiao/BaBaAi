@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>姓名</string>
+			<key>viewName</key>
+			<string>childname</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>性别</string>
+			<key>viewName</key>
+			<string>six</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>生日</string>
+			<key>viewName</key>
+			<string>birthdate</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>身高(cm):</string>
+			<key>viewName</key>
+			<string>height</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>体重(kg):</string>
+			<key>viewName</key>
+			<string>weight</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>手表电话</string>
+			<key>viewName</key>
+			<string>watchphone</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>本机电话</string>
+			<key>viewName</key>
+			<string>phone</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>IMEI</string>
+			<key>viewName</key>
+			<string>imei</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>亲属关系</string>
+			<key>viewName</key>
+			<string>relationship</string>
+		</dict>
+	</array>
+</array>
+</plist>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReachToLocationVC">
+            <connections>
+                <outlet property="bgImageView" destination="pc1-cD-7l1" id="kQM-mg-NzY"/>
+                <outlet property="bgImageView2" destination="2ZC-0I-6EB" id="xub-49-7ws"/>
+                <outlet property="buthonImageView" destination="7Fg-4n-F2p" id="KD0-E3-cVc"/>
+                <outlet property="centerImageView" destination="tXl-vO-X4h" id="CIp-Gt-SZM"/>
+                <outlet property="explainLab" destination="ZZ4-N8-9pe" id="h28-Ti-LGq"/>
+                <outlet property="outBtn" destination="Udf-JL-fZV" id="NiU-2h-d6i"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ble_new_bg" id="pc1-cD-7l1">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ble_new_scan_bg" id="7Fg-4n-F2p">
+                    <rect key="frame" x="40" y="30" width="240" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="外出开启随行可以防止宝贝走丢哦，当宝贝与您的距离超出安全范围时，我们会提示您和宝贝。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZZ4-N8-9pe">
+                    <rect key="frame" x="10" y="420" width="300" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Udf-JL-fZV">
+                    <rect key="frame" x="10" y="382" width="300" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="退出随行" backgroundImage="ble_exit_border.9">
+                        <color key="titleColor" red="1" green="0.089901450440000003" blue="0.1847185703" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="outBtnAction:" destination="-1" eventType="touchUpInside" id="WGb-WA-9xy"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ble_new_scan" id="2ZC-0I-6EB">
+                    <rect key="frame" x="34" y="29" width="246" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ble_center" id="tXl-vO-X4h">
+                    <rect key="frame" x="125" y="114" width="70" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="479" y="253"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ble_center" width="327" height="327"/>
+        <image name="ble_exit_border.9" width="104" height="104"/>
+        <image name="ble_new_bg" width="1080" height="1701"/>
+        <image name="ble_new_scan" width="932" height="932"/>
+        <image name="ble_new_scan_bg" width="932" height="932"/>
+    </resources>
+</document>

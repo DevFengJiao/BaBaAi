@@ -1,0 +1,55 @@
+//
+//  BaBaAi-Prefix.pch
+//  BaBaAi
+//
+//  Created by 冯大师 on 15/12/7.
+//  Copyright © 2015年 FengMaster. All rights reserved.
+//
+
+#ifndef BaBaAi_Prefix_pch
+#define BaBaAi_Prefix_pch
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "SystemSupport.h"
+#import "Defines.h"
+#import "GlobalStyle.h"
+#import "DefineString.h"
+#import "Util.h"
+#import "Colours.h"
+#import "UINavigationItem+mk.h"
+#import "UIViewController+util.h"
+#import "BaseNavigationController.h"
+
+#import "SVProgressHUD.h"
+#import "NSDictionary+Utility.h"
+#import "BaseViewController.h"
+
+
+#import "UINavigationController+Extension.h"
+#import "NSString+util.h"
+
+#import "UIBarButtonItem+util.h"
+
+#import "UserHandle.h"
+#import "ParameterModel.h"
+#import "TBParameters.h"
+#import "ITcpClient.h"
+#import "FileManagerHelper.h"
+#import "ChildModel.h"
+#import "TcpClient.h"
+#import "DateUtil.h"
+
+#import "RecvNoteData.h"
+
+
+#endif
+
+#endif /* BaBaAi_Prefix_pch */
